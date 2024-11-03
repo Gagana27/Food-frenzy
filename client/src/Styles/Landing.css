@@ -1,0 +1,383 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.menutext{
+
+font-family:sans-serif;
+font-weight: 900;
+
+   
+    
+    
+    }
+
+
+.branding {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.nav a {
+    margin: 0 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.profile-icon {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+/* Hero Section Styles */
+.hero-section-modified {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(202, 220, 232);
+    position: relative;
+}
+
+.text-container {
+    position: relative;
+    left: 20px;
+}
+
+.biryani_text_modified {
+    font-family: 'Italianno', cursive;
+    font-size: 200px;
+    color: #7072D3;
+    margin: 0;
+    margin-left: 120px;
+    margin-top: -50px;
+
+}
+
+.biryani_text1_modified {
+    font-family: 'Fantasy', sans-serif;
+    font-size: 40px;
+    color: #000000;
+    letter-spacing: 0.15rem;
+    margin: 0;
+    margin-left: 320px;
+    margin-top: -70px;
+
+}
+
+.homebutton_modified {
+    margin-top: 20px;
+    margin-left: 100px;
+    padding: 10px 40px;
+    background-color: #A1211F;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: 'Sansita', sans-serif;
+    font-size: 20px;
+}
+
+.hero_image_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 150px;
+    width: 350px;
+height: 305px;
+left: 912px;
+top: 87px;
+border-radius: 100%;
+background: #6466BD;
+}
+
+.home_logo_modified {
+    width: 300px;
+    height: auto;
+    margin-right: 32px;
+    box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 100%;
+    background-color: #000000;
+}
+
+/* Menu Section Styles */
+.menu-section {
+
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+}
+
+.menu-categories {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.box-container {
+    width: 300px;  /* Adjust the width as needed */
+    height: 250px;  /* Adjust the height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;/* Box background color */
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for the container */
+    margin-bottom: 10px;
+}
+
+.biryani-image {
+    width: 240px;  /* Adjust the width as needed */
+    height: 240px;  /* Adjust the height as needed */
+    border-radius: 50%;
+    margin-right: 100p;
+}
+
+.menu-item h3 {
+    margin-top: 10px;
+    color: #4b0082;
+}
+
+/* CTA Section Styles */
+.cta-section {
+    background-color: #7072D3;
+    color: white;
+    padding: 10 px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    height: 330px;
+}
+
+.cta-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.cta-text {
+    max-width: 60%;
+    margin-top: 10px;
+}
+
+.cta-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-right: 150px;
+}
+
+.cta-buttons .login,
+.cta-buttons .signup {
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: white;
+    color: #4b0082;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero-section-modified {
+        flex-direction: column;
+        text-align: center;
+      
+    }
+
+    .home_logo_modified {
+        width: 40%;
+        margin-top: 20px;
+        margin-left: 350px;
+    }
+    .biryani_text_modified {
+        margin-left: -50px;
+    }
+    .biryani_text1_modified {
+       margin-left: 5px;
+    }
+
+    .homebutton_modified {
+       margin-left: 5px;
+    }
+
+    .menu-categories {
+        flex-direction: column;
+        
+    }
+
+    .menu-item {
+        width: 80%;
+        margin: 10px auto;
+    }
+    .cta-content {
+        flex-direction: column;
+        text-align: center;
+       
+    }
+
+    .cta-text {
+        max-width: 100%;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+
+    .cta-buttons {
+        display: flex;
+        gap: 1px;
+        
+    }
+
+    .cta-buttons .signup {
+        padding: 8px 16px;
+        margin-bottom: 80px;
+        margin-left: 70px;
+        
+    }
+    .cta-buttons .login{
+        padding: 8px 16px;
+        margin-bottom: 80px;
+        margin-left: 150px;
+    }
+    .hero_image_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       margin-top: 40px;
+       margin-left: 250px;
+        width: 350px;
+    height: 305px;
+    left: 12px;
+    top: 87px;
+    border-radius: 100%;
+    background: #6466BD;
+    }
+    
+    .home_logo_modified {
+        width: 300px;
+        height: auto;
+        margin-right: 32px;
+        width: 308px;
+    height: 305px;
+    margin-left: -5px;
+    box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 100%;
+    background-color: #000000;
+    }
+
+    .cta-section {
+        background-color: #7072D3;
+        color: white;
+        padding: 10 px;
+        text-align: left;
+        display: flex;
+        justify-content: center;
+        height: 270px;
+        padding-top: 20px;
+    }
+
+}
+
+@media (max-width: 480px) {
+   
+
+    .hero-section-modified {
+        flex-direction: column;
+    }
+
+    .biryani_text_modified {
+        font-size: 100px;
+        margin-left: -30px;
+        margin-top: 0px;
+        
+    }
+
+    .biryani_text1_modified {
+        font-size: 20px;
+        margin-top: -30px;
+        margin-right: 30px;
+    }
+    .cta-text {
+        max-width: 100%;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+
+    .homebutton_modified {
+        padding: 8px 16px;
+        margin-right: 30px;
+    }
+
+    
+    .cta-buttons .signup {
+        padding: 8px 16px;
+        margin-bottom: 80px;
+        margin-left: 70px;
+        
+    }
+    .cta-buttons .login{
+        padding: 8px 16px;
+        margin-bottom: 80px;
+        margin-left: 150px;
+    }
+
+    .cta-buttons {
+        flex-direction: row;
+        gap: 1px;
+
+    }
+    
+    .hero_image_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        margin-left: 200px;
+        width: 55%; 
+        height: 180px;
+    }
+    
+
+    .home_logo_modified {
+        width: 120%;
+        height: 180px;
+        margin-left: -10px;
+        object-fit: cover; 
+        border-radius: 100%;
+    }
+
+   
+    
+
+
+}
+@media (min-width: 769px) {
+    .home_logo_modified {
+        width: 308px;
+        height: 305px;
+        margin-left: -5px;
+    }
+}
